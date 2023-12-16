@@ -66,16 +66,12 @@ export const Projects = () => {
                           {
                             projects.map((project, index) => {
                               return (
-                                // <div className="d-flex flex-column flex-md-row">
-
-                                //   <a href={`${project.link}`}>
-
+                               
                                 <ProjectCard
                                   key={index}
                                   {...project}
                                 />
-                                //   </a>
-                                // </div>
+                         
                               )
                             })
                           }
@@ -101,40 +97,9 @@ export const Projects = () => {
                               student, granting them access to our platform</p>
                           </div>
 
-                          {/* <div className="d-block d-md-none">
-                            {/* for mobile 
-                            <div className="d-none d-md-block">
-                              <p>
-                                <b>
-                                  Bid Management app
-                                </b>
-                                <p>A platform where users can sign up, log in, and access various
-                                  functionalities like viewing, creating, and winning bids.</p>
-                              </p>
-                            </div>
-                            <div className="d-none d-md-block">
-                              <p>
-                                <b> Ymaru online course</b>
-                                <p>The website that allows users to register as either a teacher or a
-                                  student, granting them access to our platform</p></p>
-                            </div>
-                          </div> */}
+                          
                         </div>
-                        {/* <div className="d-block d-md-none">
-                          <p>
-                            <b>
-                              Bid Management app
-                            </b>
-                            <p>A platform where users can sign up, log in, and access various
-                              functionalities like viewing, creating, and winning bids.</p>
-                          </p>
-                        </div>
-                        <div className="d-block d-md-none">
-                          <p>
-                            <b> Ymaru online course</b>
-                            <p>The website that allows users to register as either a teacher or a
-                              student, granting them access to our platform</p></p>
-                        </div> */}
+                        
                       </Tab.Pane>
 
 
