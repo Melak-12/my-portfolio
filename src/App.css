@@ -448,7 +448,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-txtx {
   position: absolute;
   text-align: center;
-  margin-top: 17%;
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -477,7 +476,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
-  color: #0f5c5b;
+  color: #0c3737;
 }
 .background-image-right {
   top: 20%;
