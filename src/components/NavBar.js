@@ -57,7 +57,7 @@ export const NavBar = () => {
                 <a href="https://github.com/Melak-12/pms"><img src={github} alt="" /></a>
               </div>
               <HashLink to='#connect'>
-                <button className="vvd"><span>Let’s Connect</span></button>
+                <button className="vvd"><span>Contact me </span></button>
               </HashLink>
             </span>
           </Navbar.Collapse>
