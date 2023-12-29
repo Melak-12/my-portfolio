@@ -4,6 +4,8 @@ import 'react-multi-carousel/lib/styles.css';
 
 import colorSharp from "../assets/img/banner-bg.png"
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import { ProgressBar } from 'react-bootstrap';
+// import ProgressBar from '@ramonak/react-progress-bar';
 
 export const Skills = () => {
   const responsive = {
@@ -68,49 +70,83 @@ export const Skills = () => {
   ]
 
   return (
+    // <section className="skill" id="skills">
+    //   <div className="container">
+    //     <div className="row">
+    //       <div className="col-12">
+    //         <div className="skill-bx wow zoomIn ">
+    //           <h2>Skills</h2>
+    //           <p>I am quite skilled at those technologies, mastering their intricacies and leveraging their potential <br></br>to innovate and solve complex challenges efficiently.
+
+    //           <ProgressBar now={60} striped label={`${60}%`} />
+    //           {/* <ProgressBar completed="60"> */}
+
+
+    //           </p>
+    //           <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+    //             {skills.map((item => (
+
+    //               <div className="item" style={{ width: 90 }}>
+    //                 <div style={{ width: '80px', height: '80px' }}>
+    //                   {/* <CircularProgressbar
+    //                     value={item.persent}
+    //                     text={`${item.persent}%`}
+    //                     strokeWidth={8}
+    //                     styles={buildStyles({
+    //                       strokeLinecap: 'butt',
+    //                       textSize: '20px',
+    //                       pathColor: `rgba(61, 182, 186, ${item.persent / 100})`,
+    //                       trailColor: '#000000',
+    //                       textColor: '#657d68',
+
+    //                     })}
+
+    //                   /> */}
+    //               <ProgressBar now={item.persent} striped label={`${item.persent}%`} />
+
+    //                 </div>
+    //                 <h5 style={{ color: "#767e99" }}>{item.tech}</h5>
+    //               </div>
+    //             )))}
+
+
+    //           </Carousel>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    //   <img className="background-image-left" src={colorSharp} alt="" />
+    // </section>
+
     <section className="skill" id="skills">
       <div className="container">
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn ">
               <h2>Skills</h2>
-              <p>I am quite skilled at those technologies, mastering their intricacies and leveraging their potential <br></br>to innovate and solve complex challenges efficiently.
+              <p>I am quite skilled at those technologies, mastering their intricacies and leveraging their potential to innovate and solve complex challenges efficiently.</p>
+              <div className='skill-list'>
 
-
-
-
-              </p>
-              <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                {skills.map((item => (
-
-                  <div className="item" style={{ width: 90 }}>
-                    <div style={{ width: '80px', height: '80px' }}>
-                      <CircularProgressbar
-                        value={item.persent}
-                        text={`${item.persent}%`}
-                        strokeWidth={8}
-                        styles={buildStyles({
-                          strokeLinecap: 'butt',
-                          textSize: '20px',
-                          pathColor: `rgba(61, 182, 186, ${item.persent / 100})`,
-                          trailColor: '#000000',
-                          textColor: '#657d68',
-
-                        })}
-
-                      />
+                <div className="skill-list scrollable-skills">
+                  {skills.map((item, index) => (
+                    <div className="skill-item" key={index}>
+                      <div className="skill-row">
+                        <div className="tech-label">
+                          <h5 style={{ color: "#767e99" }}>{item.tech}</h5>
+                        </div>
+                        <div className="progress-bar">
+                          <ProgressBar animated now={item.persent} striped label={`${item.persent}%`} />
+                        </div>
+                      </div>
                     </div>
-                    <h5 style={{ color: "#767e99" }}>{item.tech}</h5>
-                  </div>
-                )))}
-
-
-              </Carousel>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="image" />
+      <img className="background-image-left" src={colorSharp} alt="" />
     </section>
   )
 }

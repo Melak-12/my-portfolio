@@ -57,17 +57,19 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                    <a href="https://drive.google.com/file/d/1OwDJ-7Pu9B2vMMxybEnY8iuEOIxv9YaA/view?usp=sharing">
-                  <span className="tagline">
-                    Download CV
+                  <a href="https://drive.google.com/file/d/1OwDJ-7Pu9B2vMMxybEnY8iuEOIxv9YaA/view?usp=sharing">
+                    <span className="tagline">
+                      Download CV
                     </span>
-                    </a>
+                  </a>
                   <h1>{`Hi! I'm Melaku`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Mobile App  Developer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>
 
-                    Hello world ! I am Melaku Abebe . I am website developer . I am 5th year software engineering student at ADDIS ABABA SCEINCE AND TECHNOLOGY UNIVERSITY. My passion is on computer related things . I started computer programming since I joned to campus in 2019.</p>
-                  <button onClick={()=>alert('0961295261')}>contact me <ArrowRightCircle size={25} /></button>
-                {/* will be added */}
+                  <p>
+                As a full-stack developer, I am proficient in Flutter and Figma design. I am dedicated to delivering high-quality solutions and am skilled in working individuall and collaboratively within teams to achieve exceptional results. I bring creativity, problem-solving, and a strong work ethic to every project I'm involved in.
+              </p>
+              
+                  <button onClick={() => alert('0961295261')}>contact me <ArrowRightCircle size={25} /></button>
+                  {/* will be added */}
                 </div>}
               {/* <Progress  type="cirular" percent={98}/> */}
 
