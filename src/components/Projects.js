@@ -3,6 +3,9 @@ import { ProjectCard } from "./ProjectCard";
 
 import game from "../assets/img/game.jpg";
 import foodapp from "../assets/img/foodapp.png";
+import food3img from "../assets/img/3Dfood.png";
+import snake from "../assets/img/snake.png";
+import navimg from "../assets/img/Navimg.png";
 import pms from "../assets/img/pms.png";
 import colorSharp2 from "../assets/img/banner-bg.png";
 import songapp from "../assets/img/songapp.png";
@@ -12,11 +15,7 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
 
   const projects = [
-    // {
-    //   title: "Tik Tak game",
-    //   description: "flutter mobile app development",
-    //   imgUrl: game,
-    // },
+
     {
       title: "Restaurant",
       description: "web app ",
@@ -26,7 +25,7 @@ export const Projects = () => {
     {
       title: "Project management system",
       description: "web app",
-      link: "https://projectmgmtsystem.vercel.app/userTasks",
+      link: "https://projectmgmtsystem.vercel.app/",
       imgUrl: pms,
     },
     {
@@ -34,6 +33,28 @@ export const Projects = () => {
       description: "mern stack app",
       link: "https://songapp-ten.vercel.app/",
       imgUrl: songapp,
+    },
+
+  ];
+  const projects3 = [
+
+    {
+      title: "3D animation food",
+      description: "Ethio food ",
+      link: "https://threedfoods.vercel.app/",
+      imgUrl: food3img,
+    },
+    {
+      title: "3D Navigation bar",
+      description: "Navigation Bar",
+      link: "https://threednavbar.vercel.app/",
+      imgUrl: navimg,
+    },
+    {
+      title: "Snake game",
+      description: "developed by canva ",
+      link: "https://snake-game-azure-gamma.vercel.app/",
+      imgUrl: snake,
     },
 
   ];
@@ -66,18 +87,32 @@ export const Projects = () => {
                           {
                             projects.map((project, index) => {
                               return (
-                               
+
                                 <ProjectCard
                                   key={index}
                                   {...project}
                                 />
-                         
+
                               )
                             })
                           }
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
+                        <Row>
+                          {
+                            projects3.map((project, index) => {
+                              return (
+
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                />
+
+                              )
+                            })
+                          }
+                        </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="section">
                         <div className="d-flex flex-column flex-md-row">
@@ -97,9 +132,9 @@ export const Projects = () => {
                               student, granting them access to our platform</p>
                           </div>
 
-                          
+
                         </div>
-                        
+
                       </Tab.Pane>
 
 
@@ -110,7 +145,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" alt="" src={colorSharp2}></img>
     </section>
   )
 }

@@ -65,7 +65,7 @@ export const Banner = () => {
                   <h1>{`Hi! I'm Melaku`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Mobile App  Developer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
 
                   <p>
-                As a full-stack developer, I am proficient in Flutter and Figma design. I am dedicated to delivering high-quality solutions and am skilled in working individuall and collaboratively within teams to achieve exceptional results. I bring creativity, problem-solving, and a strong work ethic to every project I'm involved in.
+                As a full-stack developer, I am proficient in Flutter and Figma design. I am dedicated to delivering high-quality solutions and am skilled in working individuall and collaboratively within teams to achieve exceptional results. 
               </p>
               
                   <button onClick={() => alert('0961295261')}>contact me <ArrowRightCircle size={25} /></button>
